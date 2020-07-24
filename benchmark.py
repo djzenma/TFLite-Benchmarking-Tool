@@ -48,11 +48,12 @@ def main(argv):
     weights_num, size = get_weights_size(model)
 
     # Generate TF Benchmark CSV
+    # Run the Benchmark
     outdir = 'output'
     if not os.path.isdir(outdir):
         os.mkdir(outdir)
     output_report = outdir + '/report.csv'
-    cmd = 'tensorflow/bazel-bin/tensorflow/lite/tools/benchmark/benchmark_model --graph=model/car_sensor_reduced_drange.tflite --enable_op_profiling=true --profiling_output_csv_file="' + output_report + '"'
+    cmd = 'tensorflow/bazel-bin/tensorflow/lite/tools/benchmark/benchmark_model --graph=' + file_name + ' --enable_op_profiling=true --profiling_output_csv_file="' + output_report + '"'
     os.system(cmd)
 
     # Append memory rows
