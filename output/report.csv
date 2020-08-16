@@ -25,53 +25,53 @@ Memory (bytes): count=0
 Operator-wise Profiling Info for Regular Benchmark Runs:
 ============================== Run Order ==============================
 node type, start, first, avg_ms, %, cdf%, mem KB, times called, name
-EXPAND_DIMS, 0, 0.001, 0.00011539, 0.34329%, 0.34329%, 0, 1, [vehicle_cnn/conv_1/conv1d/ExpandDims]:0
-CONV_2D, 0.000160692, 0.006, 0.00559998, 16.6601%, 17.0034%, 0, 1, [vehicle_cnn/conv_1/conv1d2]:1
-SQUEEZE, 0.00581178, 0, 0.000191123, 0.568596%, 17.572%, 0, 1, [vehicle_cnn/conv_1/conv1d/Squeeze]:2
-ADD, 0.00605018, 0.001, 0.00107817, 3.2076%, 20.7796%, 0, 1, [vehicle_cnn/conv_1/BiasAdd]:3
-RELU, 0.00718045, 0.001, 0.00033763, 1.00446%, 21.7841%, 0, 1, [vehicle_cnn/conv_1/Relu]:4
-EXPAND_DIMS, 0.00756269, 0, 0.000169463, 0.504158%, 22.2882%, 0, 1, [vehicle_cnn/max_pool_1/ExpandDims]:5
-MAX_POOL_2D, 0.00777913, 0.004, 0.00329401, 9.79977%, 32.088%, 0, 1, [vehicle_cnn/max_pool_1/MaxPool]:6
-SQUEEZE, 0.0111184, 0, 0.000131559, 0.391392%, 32.4794%, 0, 1, [vehicle_cnn/max_pool_1/Squeeze]:7
-EXPAND_DIMS, 0.0112941, 0, 0.000137813, 0.409997%, 32.8894%, 0, 1, [vehicle_cnn/conv_2/conv1d/ExpandDims]:8
-CONV_2D, 0.0114809, 0.012, 0.011892, 35.3791%, 68.2685%, 0, 1, [vehicle_cnn/conv_2/conv1d2]:9
-SQUEEZE, 0.0234224, 0, 0.000203096, 0.604218%, 68.8727%, 0, 1, [vehicle_cnn/conv_2/conv1d/Squeeze]:10
-ADD, 0.0236734, 0.001, 0.000790879, 2.35289%, 71.2256%, 0, 1, [vehicle_cnn/conv_2/BiasAdd]:11
-RELU, 0.0245092, 0, 0.000342587, 1.01921%, 72.2448%, 0, 1, [vehicle_cnn/conv_2/Relu]:12
-EXPAND_DIMS, 0.024895, 0, 0.000168243, 0.500528%, 72.7453%, 0, 1, [vehicle_cnn/max_pool_2/ExpandDims]:13
-MAX_POOL_2D, 0.0251643, 0.002, 0.00188278, 5.60133%, 78.3466%, 0, 1, [vehicle_cnn/max_pool_2/MaxPool]:14
-SQUEEZE, 0.0270938, 0, 0.000122941, 0.365753%, 78.7124%, 0, 1, [vehicle_cnn/max_pool_2/Squeeze]:15
-REDUCE_MAX, 0.0272656, 0.006, 0.00669852, 19.9283%, 98.6407%, 0, 1, [vehicle_cnn/global_max/Max]:16
-FULLY_CONNECTED, 0.0340197, 0.001, 0.000296141, 0.881028%, 99.5217%, 0, 1, [vehicle_cnn/fully_connected_output/BiasAdd]:17
-LOGISTIC, 0.03436, 0, 0.000160769, 0.478292%, 100%, 0, 1, [Identity]:18
+EXPAND_DIMS, 0, 0.001, 0.000339329, 0.676438%, 0.676438%, 0, 1, [vehicle_cnn/conv_1/conv1d/ExpandDims]:0
+CONV_2D, 0.000404475, 0.006, 0.00990733, 19.7498%, 20.4263%, 0, 1, [vehicle_cnn/conv_1/conv1d2]:1
+SQUEEZE, 0.0103822, 0, 0.000412371, 0.822045%, 21.2483%, 0, 1, [vehicle_cnn/conv_1/conv1d/Squeeze]:2
+ADD, 0.0108637, 0.001, 0.00161285, 3.21516%, 24.4635%, 0, 1, [vehicle_cnn/conv_1/BiasAdd]:3
+RELU, 0.0125422, 0.001, 0.000469182, 0.935295%, 25.3988%, 0, 1, [vehicle_cnn/conv_1/Relu]:4
+EXPAND_DIMS, 0.0130704, 0, 0.000218579, 0.435727%, 25.8345%, 0, 1, [vehicle_cnn/max_pool_1/ExpandDims]:5
+MAX_POOL_2D, 0.0133569, 0.004, 0.0041485, 8.26986%, 34.1044%, 0, 1, [vehicle_cnn/max_pool_1/MaxPool]:6
+SQUEEZE, 0.01756, 0, 0.000179096, 0.357021%, 34.4614%, 0, 1, [vehicle_cnn/max_pool_1/Squeeze]:7
+EXPAND_DIMS, 0.0177991, 0.001, 0.000210682, 0.419986%, 34.8814%, 0, 1, [vehicle_cnn/conv_2/conv1d/ExpandDims]:8
+CONV_2D, 0.0180862, 0.012, 0.0173696, 34.6256%, 69.507%, 0, 1, [vehicle_cnn/conv_2/conv1d2]:9
+SQUEEZE, 0.0355299, 0.001, 0.00032562, 0.649109%, 70.1561%, 0, 1, [vehicle_cnn/conv_2/conv1d/Squeeze]:10
+ADD, 0.0359105, 0.001, 0.00114861, 2.2897%, 72.4458%, 0, 1, [vehicle_cnn/conv_2/BiasAdd]:11
+RELU, 0.0371197, 0, 0.000419171, 0.8356%, 73.2814%, 0, 1, [vehicle_cnn/conv_2/Relu]:12
+EXPAND_DIMS, 0.037593, 0, 0.000223733, 0.446003%, 73.7274%, 0, 1, [vehicle_cnn/max_pool_2/ExpandDims]:13
+MAX_POOL_2D, 0.0378775, 0.003, 0.00237771, 4.73988%, 78.4672%, 0, 1, [vehicle_cnn/max_pool_2/MaxPool]:14
+SQUEEZE, 0.0403082, 0, 0.000169555, 0.338%, 78.8052%, 0, 1, [vehicle_cnn/max_pool_2/Squeeze]:15
+REDUCE_MAX, 0.0406073, 0.007, 0.00971595, 19.3683%, 98.1736%, 0, 1, [vehicle_cnn/global_max/Max]:16
+FULLY_CONNECTED, 0.0503939, 0.001, 0.000560759, 1.11785%, 99.2914%, 0, 1, [vehicle_cnn/fully_connected_output/BiasAdd]:17
+LOGISTIC, 0.0510218, 0, 0.000355451, 0.708576%, 100%, 0, 1, [Identity]:18
 
 ============================== Top by Computation Time ==============================
 node type, start, first, avg_ms, %, cdf%, mem KB, times called, name
-CONV_2D, 0.0114809, 0.012, 0.011892, 35.3791%, 35.3791%, 0, 1, [vehicle_cnn/conv_2/conv1d2]:9
-REDUCE_MAX, 0.0272656, 0.006, 0.00669852, 19.9283%, 55.3074%, 0, 1, [vehicle_cnn/global_max/Max]:16
-CONV_2D, 0.000160692, 0.006, 0.00559998, 16.6601%, 71.9675%, 0, 1, [vehicle_cnn/conv_1/conv1d2]:1
-MAX_POOL_2D, 0.00777913, 0.004, 0.00329401, 9.79977%, 81.7673%, 0, 1, [vehicle_cnn/max_pool_1/MaxPool]:6
-MAX_POOL_2D, 0.0251643, 0.002, 0.00188278, 5.60133%, 87.3686%, 0, 1, [vehicle_cnn/max_pool_2/MaxPool]:14
-ADD, 0.00605018, 0.001, 0.00107817, 3.2076%, 90.5762%, 0, 1, [vehicle_cnn/conv_1/BiasAdd]:3
-ADD, 0.0236734, 0.001, 0.000790879, 2.35289%, 92.9291%, 0, 1, [vehicle_cnn/conv_2/BiasAdd]:11
-RELU, 0.0245092, 0, 0.000342587, 1.01921%, 93.9483%, 0, 1, [vehicle_cnn/conv_2/Relu]:12
-RELU, 0.00718045, 0.001, 0.00033763, 1.00446%, 94.9528%, 0, 1, [vehicle_cnn/conv_1/Relu]:4
-FULLY_CONNECTED, 0.0340197, 0.001, 0.000296141, 0.881028%, 95.8338%, 0, 1, [vehicle_cnn/fully_connected_output/BiasAdd]:17
+CONV_2D, 0.0180862, 0.012, 0.0173696, 34.6256%, 34.6256%, 0, 1, [vehicle_cnn/conv_2/conv1d2]:9
+CONV_2D, 0.000404475, 0.006, 0.00990733, 19.7498%, 54.3754%, 0, 1, [vehicle_cnn/conv_1/conv1d2]:1
+REDUCE_MAX, 0.0406073, 0.007, 0.00971595, 19.3683%, 73.7438%, 0, 1, [vehicle_cnn/global_max/Max]:16
+MAX_POOL_2D, 0.0133569, 0.004, 0.0041485, 8.26986%, 82.0136%, 0, 1, [vehicle_cnn/max_pool_1/MaxPool]:6
+MAX_POOL_2D, 0.0378775, 0.003, 0.00237771, 4.73988%, 86.7535%, 0, 1, [vehicle_cnn/max_pool_2/MaxPool]:14
+ADD, 0.0108637, 0.001, 0.00161285, 3.21516%, 89.9687%, 0, 1, [vehicle_cnn/conv_1/BiasAdd]:3
+ADD, 0.0359105, 0.001, 0.00114861, 2.2897%, 92.2583%, 0, 1, [vehicle_cnn/conv_2/BiasAdd]:11
+FULLY_CONNECTED, 0.0503939, 0.001, 0.000560759, 1.11785%, 93.3762%, 0, 1, [vehicle_cnn/fully_connected_output/BiasAdd]:17
+RELU, 0.0125422, 0.001, 0.000469182, 0.935295%, 94.3115%, 0, 1, [vehicle_cnn/conv_1/Relu]:4
+RELU, 0.0371197, 0, 0.000419171, 0.8356%, 95.1471%, 0, 1, [vehicle_cnn/conv_2/Relu]:12
 
 Number of nodes executed: 19
 ============================== Summary by node type ==============================
 node type, count, avg_ms, avg %, cdf %, mem KB, times called
-CONV_2D, 2, 0.016, 59.2593%, 59.2593%, 0, 2
-REDUCE_MAX, 1, 0.006, 22.2222%, 81.4815%, 0, 1
-MAX_POOL_2D, 2, 0.004, 14.8148%, 96.2963%, 0, 2
-ADD, 2, 0.001, 3.7037%, 100%, 0, 2
+CONV_2D, 2, 0.026, 60.4651%, 60.4651%, 0, 2
+REDUCE_MAX, 1, 0.009, 20.9302%, 81.3953%, 0, 1
+MAX_POOL_2D, 2, 0.006, 13.9535%, 95.3488%, 0, 2
+ADD, 2, 0.002, 4.65116%, 100%, 0, 2
 SQUEEZE, 4, 0, 0%, 100%, 0, 4
 RELU, 2, 0, 0%, 100%, 0, 2
 LOGISTIC, 1, 0, 0%, 100%, 0, 1
 FULLY_CONNECTED, 1, 0, 0%, 100%, 0, 1
 EXPAND_DIMS, 4, 0, 0%, 100%, 0, 4
 
-Timings (microseconds): count=13112 first=35 curr=64 min=29 max=228 avg=33.6131 std=5
+Timings (microseconds): count=9118 first=39 curr=33 min=29 max=8612 avg=50.1641 std=158
 Memory (bytes): count=0
 19 nodes observed
 
